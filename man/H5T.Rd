@@ -52,7 +52,6 @@ Holger Hoefling
 \section{Methods}{
 \subsection{Public methods}{
   \itemize{
-    \item \href{#method-H5T-obj_info}{\code{H5T$obj_info()}}
     \item \href{#method-H5T-get_obj_name}{\code{H5T$get_obj_name()}}
     \item \href{#method-H5T-create_attr}{\code{H5T$create_attr()}}
     \item \href{#method-H5T-attr_open}{\code{H5T$attr_open()}}
@@ -92,6 +91,7 @@ Holger Hoefling
     \item \href{#method-H5T-get_create_plist}{\code{H5T$get_create_plist()}}
     \item \href{#method-H5T-to_text}{\code{H5T$to_text()}}
     \item \href{#method-H5T-print}{\code{H5T$print()}}
+    \item \href{#method-H5T-obj_info}{\code{H5T$obj_info()}}
   }
 }
 \if{html}{\out{<details><summary>Inherited methods</summary>
@@ -105,25 +105,6 @@ Holger Hoefling
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="methods"><a href='../../hdf5r/html/H5RefClass.html#method-H5RefClass-methods'><code>H5RefClass$methods()</code></a></span></li>
 </ul>
 </details>}}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-H5T-obj_info"></a>}}
-\if{latex}{\out{\hypertarget{method-H5T-obj_info}{}}}
-\subsection{\code{H5T$obj_info()}}{
-  This function implements the HDF5-API function H5Oget_info. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
-  \subsection{Usage}{
-    \if{html}{\out{<div class="r">}}
-    \preformatted{H5T$obj_info(remove_internal_use_only = TRUE)}
-    \if{html}{\out{</div>}}
-  }
-  \subsection{Arguments}{
-    \if{html}{\out{<div class="arguments">}}
-    \describe{
-      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
-    }
-    \if{html}{\out{</div>}}
-  }
-}
-
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-H5T-get_obj_name"></a>}}
 \if{latex}{\out{\hypertarget{method-H5T-get_obj_name}{}}}
@@ -872,6 +853,25 @@ Holger Hoefling
     \if{html}{\out{<div class="arguments">}}
     \describe{
       \item{\code{...}}{ignored}
+    }
+    \if{html}{\out{</div>}}
+  }
+}
+
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-H5T-obj_info"></a>}}
+\if{latex}{\out{\hypertarget{method-H5T-obj_info}{}}}
+\subsection{\code{H5T$obj_info()}}{
+  This function implements the HDF5-API function H5Oget_info. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{H5T$obj_info(remove_internal_use_only = TRUE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
     }
     \if{html}{\out{</div>}}
   }

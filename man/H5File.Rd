@@ -98,9 +98,6 @@ Holger Hoefling, Mario Annau
 \section{Methods}{
 \subsection{Public methods}{
   \itemize{
-    \item \href{#method-H5File-obj_info_by_idx}{\code{H5File$obj_info_by_idx()}}
-    \item \href{#method-H5File-obj_info_by_name}{\code{H5File$obj_info_by_name()}}
-    \item \href{#method-H5File-obj_info}{\code{H5File$obj_info()}}
     \item \href{#method-H5File-open}{\code{H5File$open()}}
     \item \href{#method-H5File-open_by_idx}{\code{H5File$open_by_idx()}}
     \item \href{#method-H5File-ls}{\code{H5File$ls()}}
@@ -160,6 +157,9 @@ Holger Hoefling, Mario Annau
     \item \href{#method-H5File-get_intent}{\code{H5File$get_intent()}}
     \item \href{#method-H5File-close_all}{\code{H5File$close_all()}}
     \item \href{#method-H5File-print}{\code{H5File$print()}}
+    \item \href{#method-H5File-obj_info_by_idx}{\code{H5File$obj_info_by_idx()}}
+    \item \href{#method-H5File-obj_info_by_name}{\code{H5File$obj_info_by_name()}}
+    \item \href{#method-H5File-obj_info}{\code{H5File$obj_info()}}
   }
 }
 \if{html}{\out{<details><summary>Inherited methods</summary>
@@ -173,74 +173,6 @@ Holger Hoefling, Mario Annau
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="methods"><a href='../../hdf5r/html/H5RefClass.html#method-H5RefClass-methods'><code>H5RefClass$methods()</code></a></span></li>
 </ul>
 </details>}}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-H5File-obj_info_by_idx"></a>}}
-\if{latex}{\out{\hypertarget{method-H5File-obj_info_by_idx}{}}}
-\subsection{\code{H5File$obj_info_by_idx()}}{
-  This function implements the HDF5-API function H5Oget_info_by_idx. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
-  \subsection{Usage}{
-    \if{html}{\out{<div class="r">}}
-    \preformatted{H5File$obj_info_by_idx(
-  n,
-  group_name = ".",
-  index_field = h5const$H5_INDEX_NAME,
-  order = h5const$H5_ITER_NATIVE,
-  remove_internal_use_only = TRUE
-)}
-    \if{html}{\out{</div>}}
-  }
-  \subsection{Arguments}{
-    \if{html}{\out{<div class="arguments">}}
-    \describe{
-      \item{\code{n}}{The index of the item to access; zero-based.}
-      \item{\code{group_name}}{The name of the group, relative to the object the method is called on.}
-      \item{\code{index_field}}{The index to iterate over; one of the \code{H5_INDEX_*} values in \code{\link{h5const}}.}
-      \item{\code{order}}{The order in which to iterate; one of the \code{H5_ITER_*} values in \code{\link{h5const}}.}
-      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
-    }
-    \if{html}{\out{</div>}}
-  }
-}
-
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-H5File-obj_info_by_name"></a>}}
-\if{latex}{\out{\hypertarget{method-H5File-obj_info_by_name}{}}}
-\subsection{\code{H5File$obj_info_by_name()}}{
-  This function implements the HDF5-API function H5Oget_info_by_name. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
-  \subsection{Usage}{
-    \if{html}{\out{<div class="r">}}
-    \preformatted{H5File$obj_info_by_name(object_name, remove_internal_use_only = TRUE)}
-    \if{html}{\out{</div>}}
-  }
-  \subsection{Arguments}{
-    \if{html}{\out{<div class="arguments">}}
-    \describe{
-      \item{\code{object_name}}{The name of the object, relative to the object the method is called on.}
-      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
-    }
-    \if{html}{\out{</div>}}
-  }
-}
-
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-H5File-obj_info"></a>}}
-\if{latex}{\out{\hypertarget{method-H5File-obj_info}{}}}
-\subsection{\code{H5File$obj_info()}}{
-  This function implements the HDF5-API function H5Oget_info. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
-  \subsection{Usage}{
-    \if{html}{\out{<div class="r">}}
-    \preformatted{H5File$obj_info(remove_internal_use_only = TRUE)}
-    \if{html}{\out{</div>}}
-  }
-  \subsection{Arguments}{
-    \if{html}{\out{<div class="arguments">}}
-    \describe{
-      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
-    }
-    \if{html}{\out{</div>}}
-  }
-}
-
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-H5File-open"></a>}}
 \if{latex}{\out{\hypertarget{method-H5File-open}{}}}
@@ -1633,6 +1565,74 @@ Holger Hoefling, Mario Annau
       \item{\code{...}}{ignored}
       \item{\code{max.attributes}}{Maximum number of attribute names to print}
       \item{\code{max.listing}}{Maximum number of ls-items to print}
+    }
+    \if{html}{\out{</div>}}
+  }
+}
+
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-H5File-obj_info_by_idx"></a>}}
+\if{latex}{\out{\hypertarget{method-H5File-obj_info_by_idx}{}}}
+\subsection{\code{H5File$obj_info_by_idx()}}{
+  This function implements the HDF5-API function H5Oget_info_by_idx. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{H5File$obj_info_by_idx(
+  n,
+  group_name = ".",
+  index_field = h5const$H5_INDEX_NAME,
+  order = h5const$H5_ITER_NATIVE,
+  remove_internal_use_only = TRUE
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{n}}{The index of the item to access; zero-based.}
+      \item{\code{group_name}}{The name of the group, relative to the object the method is called on.}
+      \item{\code{index_field}}{The index to iterate over; one of the \code{H5_INDEX_*} values in \code{\link{h5const}}.}
+      \item{\code{order}}{The order in which to iterate; one of the \code{H5_ITER_*} values in \code{\link{h5const}}.}
+      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
+    }
+    \if{html}{\out{</div>}}
+  }
+}
+
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-H5File-obj_info_by_name"></a>}}
+\if{latex}{\out{\hypertarget{method-H5File-obj_info_by_name}{}}}
+\subsection{\code{H5File$obj_info_by_name()}}{
+  This function implements the HDF5-API function H5Oget_info_by_name. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{H5File$obj_info_by_name(object_name, remove_internal_use_only = TRUE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{object_name}}{The name of the object, relative to the object the method is called on.}
+      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
+    }
+    \if{html}{\out{</div>}}
+  }
+}
+
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-H5File-obj_info"></a>}}
+\if{latex}{\out{\hypertarget{method-H5File-obj_info}{}}}
+\subsection{\code{H5File$obj_info()}}{
+  This function implements the HDF5-API function H5Oget_info. Please see the documentation at \url{https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html} for details.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{H5File$obj_info(remove_internal_use_only = TRUE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{remove_internal_use_only}}{Logical; should fields that are only of internal use be dropped from the result.}
     }
     \if{html}{\out{</div>}}
   }

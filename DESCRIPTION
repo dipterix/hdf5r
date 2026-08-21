@@ -34,8 +34,7 @@ Suggests:
     knitr,
     rmarkdown,
     nycflights13,
-    reshape2,
-    formatR,
+    reshape2
 SystemRequirements: HDF5 (>= 1.8.13)
 VignetteBuilder: knitr
 NeedsCompilation: yes
@@ -58,7 +57,6 @@ Collate:
     'convert.R'
     'factor_ext.R'
     'globalVariables.R'
-    'h5errorHandling.R'
     'h5wrapper.R'
     'hdf5r.R'
     'high_level_UI.R'
