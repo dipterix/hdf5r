@@ -4519,7 +4519,7 @@ fi
 HDF5_LIBS=`${H5CC} -show | ${GREP} -o " \-[lL][^[:space:]]\+" | tr "\n" " "`
 
 case "${HDF5_LIBS}" in
-  *hdf5*) ;;
+  *-lhdf5*) ;;
   *) HDF5_LIBS="${HDF5_LIBS} -lhdf5_hl -lhdf5" ;;
 esac
 HDF5_LIBS="${HDF5_LIBS} -lz -lm"

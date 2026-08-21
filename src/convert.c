@@ -2259,8 +2259,10 @@ R_xlen_t guess_nelem(SEXP _Robj, hid_t dtype_id) {
   case H5T_REFERENCE: {
     SEXP hdf5r_ns = PROTECT(eval(PROTECT(lang2(PROTECT(install("getNamespace")), PROTECT(mkString("hdf5r")))), R_GlobalEnv));
     SEXP robj_len = PROTECT(eval(PROTECT(lang3(install("$"), _Robj, install("length"))), hdf5r_ns));
+    // read the length before UNPROTECT: SEXP_to_xlen may allocate and GC robj_len
+    R_xlen_t robj_nelem = SEXP_to_xlen(robj_len);
     UNPROTECT(6);
-    return(SEXP_to_xlen(robj_len));
+    return(robj_nelem);
   }	      
   default:
     error("Error when retrieving class");

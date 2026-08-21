@@ -1,12 +1,5 @@
 # hdf5r 1.3.14
 
-- Fixed the final link step on platforms whose 'HDF5' serial build is named
-  `libhdf5_serial` (such as `Debian` and `Ubuntu` building against 'HDF5' 2.x).
-  `configure` now keeps the libraries reported by `h5cc -show` instead of also
-  forcing the generic `-lhdf5_hl -lhdf5`, which do not exist there.
-
-# hdf5r 1.3.13
-
 - Fixed installation against 'HDF5' 2.x. The private driver-init symbols
   `H5FD_family_init()`, `H5FD_log_init()`, `H5FD_sec2_init()` and
   `H5FD_stdio_init()` were removed from the public 'HDF5' headers, which broke
@@ -22,7 +15,20 @@
   The new default keeps the listing in name order on every 'HDF5' version and
   makes it agree with `names()`. Pass `order = h5const$H5_ITER_NATIVE`
   explicitly to get the previous behaviour.
-- Fixed an unprotected variable in `H5ToR_Post_RComplex()` reported by `rchk`.
+- Fixed the final link step on platforms whose 'HDF5' serial build is named
+  `libhdf5_serial` (such as `Debian` and `Ubuntu` building against 'HDF5' 2.x).
+  `configure` now keeps the `-lhdf5*` libraries reported by `h5cc -show` and
+  only falls back to the generic `-lhdf5_hl -lhdf5`, which do not exist there,
+  when `h5cc` reports no 'HDF5' library itself.
+- Fixed unprotected variables in `H5ToR_Post_RComplex()` and `guess_nelem()`
+  reported by `rchk`.
+- The `R6` class methods are now documented with ordinary `roxygen2` comments
+  instead of the experimental in-body string literals that `roxygen2` 8 no
+  longer supports, so the manual pages can be regenerated again.
+- Removed `formatR` from `Suggests`; it is no longer used.
+- The package is now checked and its website built by `GitHub Actions`,
+  including jobs for `AArch64` `Linux` and for 'HDF5' 2.x, the two platforms
+  behind the failures fixed in this release.
 
 # hdf5r 1.3.12
 

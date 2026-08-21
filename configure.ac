@@ -124,10 +124,11 @@ fi
 [
 HDF5_LIBS=`${H5CC} -show | ${GREP} -o " \-[lL][^[:space:]]\+" | tr "\n" " "`
 ]
-dnl h5cc -show already reports the right libraries (e.g. -lhdf5_serial on
-dnl Debian); only add the generic names as a fallback when it reported none.
+dnl Use the -lhdf5* flags reported by h5cc -show (e.g. -lhdf5_serial on Debian).
+dnl Match -lhdf5 specifically: an -L .../hdf5/serial search path also contains
+dnl "hdf5" but links no library, so we must still add the generic names then.
 case "${HDF5_LIBS}" in
-  *hdf5*) ;;
+  *-lhdf5*) ;;
   *) HDF5_LIBS="${HDF5_LIBS} -lhdf5_hl -lhdf5" ;;
 esac
 HDF5_LIBS="${HDF5_LIBS} -lz -lm"
