@@ -124,8 +124,13 @@ fi
 [
 HDF5_LIBS=`${H5CC} -show | ${GREP} -o " \-[lL][^[:space:]]\+" | tr "\n" " "`
 ]
-dnl Fix for newer Debian versions
-HDF5_LIBS="${HDF5_LIBS} -L. -lhdf5_hl -lhdf5 -lz -lm"
+dnl h5cc -show already reports the right libraries (e.g. -lhdf5_serial on
+dnl Debian); only add the generic names as a fallback when it reported none.
+case "${HDF5_LIBS}" in
+  *hdf5*) ;;
+  *) HDF5_LIBS="${HDF5_LIBS} -lhdf5_hl -lhdf5" ;;
+esac
+HDF5_LIBS="${HDF5_LIBS} -lz -lm"
 
 #########################
 # Determine HDF5_CPPFLAGS

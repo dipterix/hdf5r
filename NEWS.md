@@ -1,3 +1,10 @@
+# hdf5r 1.3.14
+
+- Fixed the final link step on platforms whose 'HDF5' serial build is named
+  `libhdf5_serial` (such as `Debian` and `Ubuntu` building against 'HDF5' 2.x).
+  `configure` now keeps the libraries reported by `h5cc -show` instead of also
+  forcing the generic `-lhdf5_hl -lhdf5`, which do not exist there.
+
 # hdf5r 1.3.13
 
 - Fixed installation against 'HDF5' 2.x. The private driver-init symbols

@@ -9,6 +9,12 @@ HDF5 2.x, which currently fail with:
 HDF5 2.x removed four private driver-init symbols from its public headers. The
 wrappers around them were unreachable from R and have been removed.
 
+Once those symbols are gone, systems whose serial HDF5 build is named
+`libhdf5_serial` (Debian, Ubuntu) reach the final link step and fail on the
+generic `-lhdf5_hl -lhdf5` names that `configure` forced on top of what
+`h5cc -show` reports. `configure` now only falls back to the generic names when
+`h5cc` reports none.
+
 It also fixes the linux-arm64 test failure, where `H5T_NATIVE_CHAR` resolves to
 an unsigned type because plain `char` is unsigned on AArch64, and the
 unprotected variable in `H5ToR_Post_RComplex()` reported by `rchk`.
