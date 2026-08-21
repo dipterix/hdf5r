@@ -109,7 +109,7 @@ Please see the documentation at \url{https://support.hdfgroup.org/documentation/
 
 \item{\code{ls(recursive = FALSE, detailed = FALSE,
   index_type = h5const$H5_INDEX_NAME,
-  order = h5const$H5_ITER_NATIVE,
+  order = h5const$H5_ITER_INC,
   link_access_pl = h5const$H5P_DEFAULT,
   dataset_access_pl = h5const$H5P_DEFAULT,
   type_access_pl = h5const$H5P_DEFAULT)}}{

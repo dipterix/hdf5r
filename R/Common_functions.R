@@ -123,9 +123,13 @@ commonFG <- list(
             stop(paste("An object with name", group_name, "does not exist"))
         }
     },
-    ls=function(recursive=FALSE, detailed=FALSE, index_type=h5const$H5_INDEX_NAME, order=h5const$H5_ITER_NATIVE, link_access_pl=h5const$H5P_DEFAULT,
+    ls=function(recursive=FALSE, detailed=FALSE, index_type=h5const$H5_INDEX_NAME, order=h5const$H5_ITER_INC, link_access_pl=h5const$H5P_DEFAULT,
         dataset_access_pl=h5const$H5P_DEFAULT, type_access_pl=h5const$H5P_DEFAULT) {
         "Returns the contents of a file or group as a data.frame."
+        ## 'order' defaults to H5_ITER_INC so that the listing is in increasing
+        ## index_type order, matching what 'names' returns. H5_ITER_NATIVE lets
+        ## HDF5 pick whatever is fastest; that happened to be name order up to
+        ## HDF5 1.x but is creation order in HDF5 2.x.
 
         ls_res <- .Call("R_H5ls", self$id, recursive, index_type, order, link_access_pl$id,
                         dataset_access_pl$id, type_access_pl$id, PACKAGE='hdf5r')$return_val
