@@ -20,6 +20,18 @@
 
 
 
+## NOTE ON DOCUMENTATION
+##
+## The method lists in this file are attached to the R6 generators at run time
+## by R6_set_list_of_items(), so roxygen cannot see a roxygen comment written
+## next to them here. They keep the older "docstring" convention instead - bare
+## string literals at the top of the body, optionally including @param and
+## @return lines - and R/r6_docs.R turns those into real documentation.
+##
+## So: document methods in THIS file with docstrings, and methods defined
+## directly inside an R6Class() call with ordinary #' roxygen comments. After
+## adding or removing a method here, re-run dev/generate_r6_docs.R.
+
 interface <- list(
     get_file_id=function() {
         "This function implements the HDF5-API function H5Iget_file_id."
@@ -816,6 +828,13 @@ commonFG <- list(
 
 
 
+
+
+
+
+
+
+
 commonFG_active <- list(
         names=function(link_access_pl=h5const$H5P_DEFAULT) {
         "Returns the names of the items in the group or at the root of the file"
@@ -830,10 +849,6 @@ commonFG_active <- list(
         return(res)
     }
 )
-
-
-
-
 
 
 
