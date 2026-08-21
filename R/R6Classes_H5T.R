@@ -630,7 +630,10 @@ H5T_ENUM <- R6Class("H5T_ENUM",
 
                                 if(has_neg) {
                                     if(size <= 1) {
-                                        dtype_id <- h5types$H5T_NATIVE_CHAR
+                                        ## H5T_NATIVE_CHAR follows the signedness of plain 'char', which is
+                                        ## unsigned on AArch64 Linux; negative values would then be clamped
+                                        ## to 0 and collide. Always ask for the signed type explicitly.
+                                        dtype_id <- h5types$H5T_NATIVE_SCHAR
                                     }
                                     else if(size <= 2) {
                                         dtype_id <- h5types$H5T_NATIVE_SHORT
