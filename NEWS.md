@@ -1,3 +1,22 @@
+# hdf5r 1.3.13
+
+- Fixed installation against 'HDF5' 2.x. The private driver-init symbols
+  `H5FD_family_init()`, `H5FD_log_init()`, `H5FD_sec2_init()` and
+  `H5FD_stdio_init()` were removed from the public 'HDF5' headers, which broke
+  compilation on every platform building against 'HDF5' 2.x. The `R` wrappers
+  around them were never reachable from `R` and have been removed.
+- Fixed `H5T_ENUM` for enumerations containing negative values on platforms
+  where plain `char` is unsigned, such as `AArch64` `Linux`. Such enumerations
+  previously failed with a `value redefinition` error from 'HDF5'.
+- `ls()`, and therefore `list.datasets()`, `list.groups()` and
+  `list.objects()`, now default to `order = h5const$H5_ITER_INC` instead of
+  `h5const$H5_ITER_NATIVE`. `H5_ITER_NATIVE` leaves the order unspecified; it
+  came out in name order up to 'HDF5' 1.x but is creation order in 'HDF5' 2.x.
+  The new default keeps the listing in name order on every 'HDF5' version and
+  makes it agree with `names()`. Pass `order = h5const$H5_ITER_NATIVE`
+  explicitly to get the previous behaviour.
+- Fixed an unprotected variable in `H5ToR_Post_RComplex()` reported by `rchk`.
+
 # hdf5r 1.3.12
 
 - Fix compilation warning #232.
