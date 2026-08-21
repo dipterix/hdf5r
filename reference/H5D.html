@@ -63,7 +63,7 @@ Returns the space, type, property-list and dimensions
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hdf5r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.13</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.14</span>
       </span>
     </div>
 
@@ -176,8 +176,7 @@ In addition, other features are supported such as transparent compression (for w
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-<p></p><ul><li><p><a href="#method-H5D-obj_info"><code>H5D$obj_info()</code></a></p></li>
-<li><p><a href="#method-H5D-get_obj_name"><code>H5D$get_obj_name()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-H5D-get_obj_name"><code>H5D$get_obj_name()</code></a></p></li>
 <li><p><a href="#method-H5D-create_attr"><code>H5D$create_attr()</code></a></p></li>
 <li><p><a href="#method-H5D-attr_open"><code>H5D$attr_open()</code></a></p></li>
 <li><p><a href="#method-H5D-create_attr_by_name"><code>H5D$create_attr_by_name()</code></a></p></li>
@@ -214,6 +213,7 @@ In addition, other features are supported such as transparent compression (for w
 <li><p><a href="#method-H5D-get_fill_value"><code>H5D$get_fill_value()</code></a></p></li>
 <li><p><a href="#method-H5D-create_reference"><code>H5D$create_reference()</code></a></p></li>
 <li><p><a href="#method-H5D-print"><code>H5D$print()</code></a></p></li>
+<li><p><a href="#method-H5D-obj_info"><code>H5D$obj_info()</code></a></p></li>
 </ul></div><p><details><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="close"><a href="H5RefClass.html#method-close"><code>H5RefClass$close()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="dec_ref"><a href="H5RefClass.html#method-dec_ref"><code>H5RefClass$dec_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="get_file_id"><a href="H5RefClass.html#method-get_file_id"><code>H5RefClass$get_file_id()</code></a></span></li>
@@ -221,26 +221,10 @@ In addition, other features are supported such as transparent compression (for w
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="get_ref"><a href="H5RefClass.html#method-get_ref"><code>H5RefClass$get_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="inc_ref"><a href="H5RefClass.html#method-inc_ref"><code>H5RefClass$inc_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="methods"><a href="H5RefClass.html#method-methods"><code>H5RefClass$methods()</code></a></span></li>
-</ul></details></p><hr><a id="method-H5D-obj_info"></a><div class="section">
-<h3 id="h-d-obj-info-"><code>H5D$obj_info()</code><a class="anchor" aria-label="anchor" href="#h-d-obj-info-"></a></h3>
-<p>This function implements the HDF5-API function H5Oget_info. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html</a> for details.</p><div class="section">
-<h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
-<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">obj_info</span><span class="op">(</span>remove_internal_use_only <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div><p></p><div class="section">
-<h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
-<p></p><div class="arguments"><dl><dt><code>remove_internal_use_only</code></dt>
-<dd><p>Logical; should fields that are only of internal use be dropped from the result.</p></dd>
-
-
-</dl><p></p></div>
-</div>
-
-</div>
-
-<p></p><hr><a id="method-H5D-get_obj_name"></a><div class="section">
+</ul></details></p><hr><a id="method-H5D-get_obj_name"></a><div class="section">
 <h3 id="h-d-get-obj-name-"><code>H5D$get_obj_name()</code><a class="anchor" aria-label="anchor" href="#h-d-get-obj-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Iget_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_i.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_i.html</a> for details.</p><div class="section">
-<h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
+<h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_obj_name</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -249,10 +233,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-create_attr"></a><div class="section">
 <h3 id="h-d-create-attr-"><code>H5D$create_attr()</code><a class="anchor" aria-label="anchor" href="#h-d-create-attr-"></a></h3>
 <p>This function implements the HDF5-API function H5Acreate2. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
+<h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">create_attr</span><span class="op">(</span><span class="va">attr_name</span>, robj <span class="op">=</span> <span class="cn">NULL</span>, dtype <span class="op">=</span> <span class="cn">NULL</span>, space <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
+<h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -274,10 +258,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_open"></a><div class="section">
 <h3 id="h-d-attr-open-"><code>H5D$attr_open()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-open-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
+<h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_open</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-2">Arguments<a class="anchor" aria-label="anchor" href="#arguments-2"></a></h4>
+<h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -290,7 +274,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-create_attr_by_name"></a><div class="section">
 <h3 id="h-d-create-attr-by-name-"><code>H5D$create_attr_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-create-attr-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Acreate_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-4">Usage<a class="anchor" aria-label="anchor" href="#usage-4"></a></h4>
+<h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">create_attr_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -300,7 +284,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-3">Arguments<a class="anchor" aria-label="anchor" href="#arguments-3"></a></h4>
+<h4 id="arguments-2">Arguments<a class="anchor" aria-label="anchor" href="#arguments-2"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -328,14 +312,14 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_open_by_name"></a><div class="section">
 <h3 id="h-d-attr-open-by-name-"><code>H5D$attr_open_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-open-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-5">Usage<a class="anchor" aria-label="anchor" href="#usage-5"></a></h4>
+<h4 id="usage-4">Usage<a class="anchor" aria-label="anchor" href="#usage-4"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_open_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-4">Arguments<a class="anchor" aria-label="anchor" href="#arguments-4"></a></h4>
+<h4 id="arguments-3">Arguments<a class="anchor" aria-label="anchor" href="#arguments-3"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -354,7 +338,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_open_by_idx"></a><div class="section">
 <h3 id="h-d-attr-open-by-idx-"><code>H5D$attr_open_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-open-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-6">Usage<a class="anchor" aria-label="anchor" href="#usage-6"></a></h4>
+<h4 id="usage-5">Usage<a class="anchor" aria-label="anchor" href="#usage-5"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_open_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -363,7 +347,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-5">Arguments<a class="anchor" aria-label="anchor" href="#arguments-5"></a></h4>
+<h4 id="arguments-4">Arguments<a class="anchor" aria-label="anchor" href="#arguments-4"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>n</code></dt>
 <dd><p>The index of the item to access; zero-based.</p></dd>
 
@@ -388,14 +372,14 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_exists_by_name"></a><div class="section">
 <h3 id="h-d-attr-exists-by-name-"><code>H5D$attr_exists_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-exists-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aexists_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-7">Usage<a class="anchor" aria-label="anchor" href="#usage-7"></a></h4>
+<h4 id="usage-6">Usage<a class="anchor" aria-label="anchor" href="#usage-6"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_exists_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-6">Arguments<a class="anchor" aria-label="anchor" href="#arguments-6"></a></h4>
+<h4 id="arguments-5">Arguments<a class="anchor" aria-label="anchor" href="#arguments-5"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -414,10 +398,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_exists"></a><div class="section">
 <h3 id="h-d-attr-exists-"><code>H5D$attr_exists()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-exists-"></a></h3>
 <p>This function implements the HDF5-API function H5Aexists. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-8">Usage<a class="anchor" aria-label="anchor" href="#usage-8"></a></h4>
+<h4 id="usage-7">Usage<a class="anchor" aria-label="anchor" href="#usage-7"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_exists</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-7">Arguments<a class="anchor" aria-label="anchor" href="#arguments-7"></a></h4>
+<h4 id="arguments-6">Arguments<a class="anchor" aria-label="anchor" href="#arguments-6"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -430,7 +414,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_rename_by_name"></a><div class="section">
 <h3 id="h-d-attr-rename-by-name-"><code>H5D$attr_rename_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-rename-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Arename_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-9">Usage<a class="anchor" aria-label="anchor" href="#usage-9"></a></h4>
+<h4 id="usage-8">Usage<a class="anchor" aria-label="anchor" href="#usage-8"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_rename_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">old_attr_name</span>,</span>
 <span>  <span class="va">new_attr_name</span>,</span>
@@ -438,7 +422,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-8">Arguments<a class="anchor" aria-label="anchor" href="#arguments-8"></a></h4>
+<h4 id="arguments-7">Arguments<a class="anchor" aria-label="anchor" href="#arguments-7"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>old_attr_name</code></dt>
 <dd><p>The current name of the attribute.</p></dd>
 
@@ -460,10 +444,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_rename"></a><div class="section">
 <h3 id="h-d-attr-rename-"><code>H5D$attr_rename()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-rename-"></a></h3>
 <p>This function implements the HDF5-API function H5Arename. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-10">Usage<a class="anchor" aria-label="anchor" href="#usage-10"></a></h4>
+<h4 id="usage-9">Usage<a class="anchor" aria-label="anchor" href="#usage-9"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_rename</span><span class="op">(</span><span class="va">old_attr_name</span>, <span class="va">new_attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-9">Arguments<a class="anchor" aria-label="anchor" href="#arguments-9"></a></h4>
+<h4 id="arguments-8">Arguments<a class="anchor" aria-label="anchor" href="#arguments-8"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>old_attr_name</code></dt>
 <dd><p>The current name of the attribute.</p></dd>
 
@@ -479,10 +463,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_delete"></a><div class="section">
 <h3 id="h-d-attr-delete-"><code>H5D$attr_delete()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-delete-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-11">Usage<a class="anchor" aria-label="anchor" href="#usage-11"></a></h4>
+<h4 id="usage-10">Usage<a class="anchor" aria-label="anchor" href="#usage-10"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_delete</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-10">Arguments<a class="anchor" aria-label="anchor" href="#arguments-10"></a></h4>
+<h4 id="arguments-9">Arguments<a class="anchor" aria-label="anchor" href="#arguments-9"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -495,14 +479,14 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_delete_by_name"></a><div class="section">
 <h3 id="h-d-attr-delete-by-name-"><code>H5D$attr_delete_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-delete-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-12">Usage<a class="anchor" aria-label="anchor" href="#usage-12"></a></h4>
+<h4 id="usage-11">Usage<a class="anchor" aria-label="anchor" href="#usage-11"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_delete_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-11">Arguments<a class="anchor" aria-label="anchor" href="#arguments-11"></a></h4>
+<h4 id="arguments-10">Arguments<a class="anchor" aria-label="anchor" href="#arguments-10"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -521,7 +505,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_delete_by_idx"></a><div class="section">
 <h3 id="h-d-attr-delete-by-idx-"><code>H5D$attr_delete_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-delete-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-13">Usage<a class="anchor" aria-label="anchor" href="#usage-13"></a></h4>
+<h4 id="usage-12">Usage<a class="anchor" aria-label="anchor" href="#usage-12"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_delete_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -530,7 +514,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-12">Arguments<a class="anchor" aria-label="anchor" href="#arguments-12"></a></h4>
+<h4 id="arguments-11">Arguments<a class="anchor" aria-label="anchor" href="#arguments-11"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>n</code></dt>
 <dd><p>The index of the item to access; zero-based.</p></dd>
 
@@ -555,14 +539,14 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_info_by_name"></a><div class="section">
 <h3 id="h-d-attr-info-by-name-"><code>H5D$attr_info_by_name()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-info-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_info_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-14">Usage<a class="anchor" aria-label="anchor" href="#usage-14"></a></h4>
+<h4 id="usage-13">Usage<a class="anchor" aria-label="anchor" href="#usage-13"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_info_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-13">Arguments<a class="anchor" aria-label="anchor" href="#arguments-13"></a></h4>
+<h4 id="arguments-12">Arguments<a class="anchor" aria-label="anchor" href="#arguments-12"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -581,8 +565,42 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-attr_info_by_idx"></a><div class="section">
 <h3 id="h-d-attr-info-by-idx-"><code>H5D$attr_info_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-info-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_info_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-15">Usage<a class="anchor" aria-label="anchor" href="#usage-15"></a></h4>
+<h4 id="usage-14">Usage<a class="anchor" aria-label="anchor" href="#usage-14"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_info_by_idx</span><span class="op">(</span></span>
+<span>  <span class="va">n</span>,</span>
+<span>  <span class="va">obj_name</span>,</span>
+<span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
+<span>  order <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_ITER_NATIVE</span>,</span>
+<span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
+<span><span class="op">)</span></span></code></pre></div><p></p></div>
+</div><p></p><div class="section">
+<h4 id="arguments-13">Arguments<a class="anchor" aria-label="anchor" href="#arguments-13"></a></h4>
+<p></p><div class="arguments"><dl><dt><code>n</code></dt>
+<dd><p>The index of the item to access; zero-based.</p></dd>
+
+      <dt><code>obj_name</code></dt>
+<dd><p>The name of the object, relative to the object the method is called on.</p></dd>
+
+      <dt><code>idx_type</code></dt>
+<dd><p>The index to iterate over; one of the <code>H5_INDEX_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
+
+      <dt><code>order</code></dt>
+<dd><p>The order in which to iterate; one of the <code>H5_ITER_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
+
+      <dt><code>link_access_pl</code></dt>
+<dd><p>The link access property list. See <code><a href="H5P_LINK_ACCESS.html">H5P_LINK_ACCESS</a></code>.</p></dd>
+
+
+</dl><p></p></div>
+</div>
+
+</div>
+
+<p></p><hr><a id="method-H5D-attr_name_by_idx"></a><div class="section">
+<h3 id="h-d-attr-name-by-idx-"><code>H5D$attr_name_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-name-by-idx-"></a></h3>
+<p>This function implements the HDF5-API function H5Aget_name_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
+<h4 id="usage-15">Usage<a class="anchor" aria-label="anchor" href="#usage-15"></a></h4>
+<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_name_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
@@ -612,44 +630,10 @@ In addition, other features are supported such as transparent compression (for w
 
 </div>
 
-<p></p><hr><a id="method-H5D-attr_name_by_idx"></a><div class="section">
-<h3 id="h-d-attr-name-by-idx-"><code>H5D$attr_name_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-name-by-idx-"></a></h3>
-<p>This function implements the HDF5-API function H5Aget_name_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-16">Usage<a class="anchor" aria-label="anchor" href="#usage-16"></a></h4>
-<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_name_by_idx</span><span class="op">(</span></span>
-<span>  <span class="va">n</span>,</span>
-<span>  <span class="va">obj_name</span>,</span>
-<span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
-<span>  order <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_ITER_NATIVE</span>,</span>
-<span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
-<span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div><p></p><div class="section">
-<h4 id="arguments-15">Arguments<a class="anchor" aria-label="anchor" href="#arguments-15"></a></h4>
-<p></p><div class="arguments"><dl><dt><code>n</code></dt>
-<dd><p>The index of the item to access; zero-based.</p></dd>
-
-      <dt><code>obj_name</code></dt>
-<dd><p>The name of the object, relative to the object the method is called on.</p></dd>
-
-      <dt><code>idx_type</code></dt>
-<dd><p>The index to iterate over; one of the <code>H5_INDEX_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
-
-      <dt><code>order</code></dt>
-<dd><p>The order in which to iterate; one of the <code>H5_ITER_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
-
-      <dt><code>link_access_pl</code></dt>
-<dd><p>The link access property list. See <code><a href="H5P_LINK_ACCESS.html">H5P_LINK_ACCESS</a></code>.</p></dd>
-
-
-</dl><p></p></div>
-</div>
-
-</div>
-
 <p></p><hr><a id="method-H5D-attr_get_number"></a><div class="section">
 <h3 id="h-d-attr-get-number-"><code>H5D$attr_get_number()</code><a class="anchor" aria-label="anchor" href="#h-d-attr-get-number-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_num_attrs. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-17">Usage<a class="anchor" aria-label="anchor" href="#usage-17"></a></h4>
+<h4 id="usage-16">Usage<a class="anchor" aria-label="anchor" href="#usage-16"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">attr_get_number</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -658,10 +642,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-flush"></a><div class="section">
 <h3 id="h-d-flush-"><code>H5D$flush()</code><a class="anchor" aria-label="anchor" href="#h-d-flush-"></a></h3>
 <p>This function implements the HDF5-API function H5Fflush. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_f.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_f.html</a> for details.</p><div class="section">
-<h4 id="usage-18">Usage<a class="anchor" aria-label="anchor" href="#usage-18"></a></h4>
+<h4 id="usage-17">Usage<a class="anchor" aria-label="anchor" href="#usage-17"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">flush</span><span class="op">(</span>scope <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5F_SCOPE_GLOBAL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-16">Arguments<a class="anchor" aria-label="anchor" href="#arguments-16"></a></h4>
+<h4 id="arguments-15">Arguments<a class="anchor" aria-label="anchor" href="#arguments-15"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>scope</code></dt>
 <dd><p>The scope of the flush; one of the <code>H5F_SCOPE_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -674,7 +658,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_filename"></a><div class="section">
 <h3 id="h-d-get-filename-"><code>H5D$get_filename()</code><a class="anchor" aria-label="anchor" href="#h-d-get-filename-"></a></h3>
 <p>This function implements the HDF5-API function H5Fget_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_f.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_f.html</a> for details.</p><div class="section">
-<h4 id="usage-19">Usage<a class="anchor" aria-label="anchor" href="#usage-19"></a></h4>
+<h4 id="usage-18">Usage<a class="anchor" aria-label="anchor" href="#usage-18"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_filename</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -683,10 +667,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-initialize"></a><div class="section">
 <h3 id="h-d-new-"><code>H5D$new()</code><a class="anchor" aria-label="anchor" href="#h-d-new-"></a></h3>
 <p>Initializes a new dataset-object. Only for internal use. Use the <code>create_dataset</code> function for <code><a href="H5Group.html">H5Group</a></code> and <code><a href="H5File.html">H5File</a></code> objects</p><div class="section">
-<h4 id="usage-20">Usage<a class="anchor" aria-label="anchor" href="#usage-20"></a></h4>
+<h4 id="usage-19">Usage<a class="anchor" aria-label="anchor" href="#usage-19"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/H5D.html">H5D</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span>id <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-17">Arguments<a class="anchor" aria-label="anchor" href="#arguments-17"></a></h4>
+<h4 id="arguments-16">Arguments<a class="anchor" aria-label="anchor" href="#arguments-16"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>id</code></dt>
 <dd><p>For internal use only</p></dd>
 
@@ -699,7 +683,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_space"></a><div class="section">
 <h3 id="h-d-get-space-"><code>H5D$get_space()</code><a class="anchor" aria-label="anchor" href="#h-d-get-space-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_space. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-21">Usage<a class="anchor" aria-label="anchor" href="#usage-21"></a></h4>
+<h4 id="usage-20">Usage<a class="anchor" aria-label="anchor" href="#usage-20"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_space</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -708,7 +692,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_space_status"></a><div class="section">
 <h3 id="h-d-get-space-status-"><code>H5D$get_space_status()</code><a class="anchor" aria-label="anchor" href="#h-d-get-space-status-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_space_status. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-22">Usage<a class="anchor" aria-label="anchor" href="#usage-22"></a></h4>
+<h4 id="usage-21">Usage<a class="anchor" aria-label="anchor" href="#usage-21"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_space_status</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -717,10 +701,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_type"></a><div class="section">
 <h3 id="h-d-get-type-"><code>H5D$get_type()</code><a class="anchor" aria-label="anchor" href="#h-d-get-type-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_type. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-23">Usage<a class="anchor" aria-label="anchor" href="#usage-23"></a></h4>
+<h4 id="usage-22">Usage<a class="anchor" aria-label="anchor" href="#usage-22"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_type</span><span class="op">(</span>native <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-18">Arguments<a class="anchor" aria-label="anchor" href="#arguments-18"></a></h4>
+<h4 id="arguments-17">Arguments<a class="anchor" aria-label="anchor" href="#arguments-17"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>native</code></dt>
 <dd><p>Logical; should the native version of the datatype be returned.</p></dd>
 
@@ -733,7 +717,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_create_plist"></a><div class="section">
 <h3 id="h-d-get-create-plist-"><code>H5D$get_create_plist()</code><a class="anchor" aria-label="anchor" href="#h-d-get-create-plist-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_create_plist. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-24">Usage<a class="anchor" aria-label="anchor" href="#usage-24"></a></h4>
+<h4 id="usage-23">Usage<a class="anchor" aria-label="anchor" href="#usage-23"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_create_plist</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -742,7 +726,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_access_plist"></a><div class="section">
 <h3 id="h-d-get-access-plist-"><code>H5D$get_access_plist()</code><a class="anchor" aria-label="anchor" href="#h-d-get-access-plist-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_access_plist. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-25">Usage<a class="anchor" aria-label="anchor" href="#usage-25"></a></h4>
+<h4 id="usage-24">Usage<a class="anchor" aria-label="anchor" href="#usage-24"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_access_plist</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -751,7 +735,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_offset"></a><div class="section">
 <h3 id="h-d-get-offset-"><code>H5D$get_offset()</code><a class="anchor" aria-label="anchor" href="#h-d-get-offset-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_offset. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-26">Usage<a class="anchor" aria-label="anchor" href="#usage-26"></a></h4>
+<h4 id="usage-25">Usage<a class="anchor" aria-label="anchor" href="#usage-25"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_offset</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -760,7 +744,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_storage_size"></a><div class="section">
 <h3 id="h-d-get-storage-size-"><code>H5D$get_storage_size()</code><a class="anchor" aria-label="anchor" href="#h-d-get-storage-size-"></a></h3>
 <p>This function implements the HDF5-API function H5Dget_storage_size. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-27">Usage<a class="anchor" aria-label="anchor" href="#usage-27"></a></h4>
+<h4 id="usage-26">Usage<a class="anchor" aria-label="anchor" href="#usage-26"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_storage_size</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -769,10 +753,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-vlen_get_buf_size"></a><div class="section">
 <h3 id="h-d-vlen-get-buf-size-"><code>H5D$vlen_get_buf_size()</code><a class="anchor" aria-label="anchor" href="#h-d-vlen-get-buf-size-"></a></h3>
 <p>This function implements the HDF5-API function H5Dvlen_get_buf_size. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-28">Usage<a class="anchor" aria-label="anchor" href="#usage-28"></a></h4>
+<h4 id="usage-27">Usage<a class="anchor" aria-label="anchor" href="#usage-27"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">vlen_get_buf_size</span><span class="op">(</span><span class="va">type</span>, <span class="va">space</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-19">Arguments<a class="anchor" aria-label="anchor" href="#arguments-19"></a></h4>
+<h4 id="arguments-18">Arguments<a class="anchor" aria-label="anchor" href="#arguments-18"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>type</code></dt>
 <dd><p>The type to use. For a dataspace one of <code>"simple"</code>, <code>"scalar"</code> or <code>"null"</code>; otherwise an object of class <code><a href="H5T.html">H5T</a></code>.</p></dd>
 
@@ -788,10 +772,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-vlen_reclaim"></a><div class="section">
 <h3 id="h-d-vlen-reclaim-"><code>H5D$vlen_reclaim()</code><a class="anchor" aria-label="anchor" href="#h-d-vlen-reclaim-"></a></h3>
 <p>This function implements the HDF5-API function H5Dvlen_reclaim. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-29">Usage<a class="anchor" aria-label="anchor" href="#usage-29"></a></h4>
+<h4 id="usage-28">Usage<a class="anchor" aria-label="anchor" href="#usage-28"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">vlen_reclaim</span><span class="op">(</span><span class="va">buffer</span>, <span class="va">type</span>, <span class="va">space</span>, dataset_xfer_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-20">Arguments<a class="anchor" aria-label="anchor" href="#arguments-20"></a></h4>
+<h4 id="arguments-19">Arguments<a class="anchor" aria-label="anchor" href="#arguments-19"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>buffer</code></dt>
 <dd><p>The raw buffer to read into or write from.</p></dd>
 
@@ -813,7 +797,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-read_low_level"></a><div class="section">
 <h3 id="h-d-read-low-level-"><code>H5D$read_low_level()</code><a class="anchor" aria-label="anchor" href="#h-d-read-low-level-"></a></h3>
 <p>This function is for advanced users. It is recommended to use <code>read</code> instead or the <code>[</code> interface. This function implements the HDF5-API function H5Dread, with minor changes to the API to accommodate R. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details. It reads the data in the dataset as specified by <code>mem_space</code> and return it as an R-obj</p><div class="section">
-<h4 id="usage-30">Usage<a class="anchor" aria-label="anchor" href="#usage-30"></a></h4>
+<h4 id="usage-29">Usage<a class="anchor" aria-label="anchor" href="#usage-29"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">read_low_level</span><span class="op">(</span></span>
 <span>  file_space <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5S_ALL</span>,</span>
 <span>  mem_space <span class="op">=</span> <span class="cn">NULL</span>,</span>
@@ -825,7 +809,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  drop <span class="op">=</span> <span class="cn">TRUE</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-21">Arguments<a class="anchor" aria-label="anchor" href="#arguments-21"></a></h4>
+<h4 id="arguments-20">Arguments<a class="anchor" aria-label="anchor" href="#arguments-20"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>file_space</code></dt>
 <dd><p>An HDF5-space, represented as class <code><a href="H5S.html">H5S</a></code> that determines which part of the dataset is being read. Can also be given as an id</p></dd>
 
@@ -859,7 +843,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-read"></a><div class="section">
 <h3 id="h-d-read-"><code>H5D$read()</code><a class="anchor" aria-label="anchor" href="#h-d-read-"></a></h3>
 <p>Main interface for reading data from the dataset. It is the function that is used by <code>[</code>, where all indices are being passed in the parameter <code>args</code>.</p><div class="section">
-<h4 id="usage-31">Usage<a class="anchor" aria-label="anchor" href="#usage-31"></a></h4>
+<h4 id="usage-30">Usage<a class="anchor" aria-label="anchor" href="#usage-30"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">read</span><span class="op">(</span></span>
 <span>  args <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  dataset_xfer_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span>,</span>
@@ -868,7 +852,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-22">Arguments<a class="anchor" aria-label="anchor" href="#arguments-22"></a></h4>
+<h4 id="arguments-21">Arguments<a class="anchor" aria-label="anchor" href="#arguments-21"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>args</code></dt>
 <dd><p>The indices for each dimension to subset given as a list. This makes this easier to use as a programmatic API. For interactive use we recommend the use of the <code>[</code> operator. If set to <code>NULL</code>, the entire dataset will be read.</p></dd>
 
@@ -896,7 +880,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-write_low_level"></a><div class="section">
 <h3 id="h-d-write-low-level-"><code>H5D$write_low_level()</code><a class="anchor" aria-label="anchor" href="#h-d-write-low-level-"></a></h3>
 <p>This function is for advanced users. It is recommended to use <code>read</code> instead or the <code>[&lt;-</code> interface as used for arrays. This function implements the HDF5-API function H5Dwrite, with some changes to accommodate R. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details. It writes that data from the <code>robj</code> into the dataset.</p><div class="section">
-<h4 id="usage-32">Usage<a class="anchor" aria-label="anchor" href="#usage-32"></a></h4>
+<h4 id="usage-31">Usage<a class="anchor" aria-label="anchor" href="#usage-31"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">write_low_level</span><span class="op">(</span></span>
 <span>  <span class="va">robj</span>,</span>
 <span>  file_space <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5S_ALL</span>,</span>
@@ -906,7 +890,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  flush <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"hdf5r.flush_on_write"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-23">Arguments<a class="anchor" aria-label="anchor" href="#arguments-23"></a></h4>
+<h4 id="arguments-22">Arguments<a class="anchor" aria-label="anchor" href="#arguments-22"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>robj</code></dt>
 <dd><p>The object to write into the dataset</p></dd>
 
@@ -934,7 +918,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-write"></a><div class="section">
 <h3 id="h-d-write-"><code>H5D$write()</code><a class="anchor" aria-label="anchor" href="#h-d-write-"></a></h3>
 <p>Main interface for writing data to the dataset. It is the function that is used by <code>[&lt;-</code>, where all indices are being passed in the parameter <code>args</code>.</p><div class="section">
-<h4 id="usage-33">Usage<a class="anchor" aria-label="anchor" href="#usage-33"></a></h4>
+<h4 id="usage-32">Usage<a class="anchor" aria-label="anchor" href="#usage-32"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">write</span><span class="op">(</span></span>
 <span>  <span class="va">args</span>,</span>
 <span>  <span class="va">value</span>,</span>
@@ -942,7 +926,7 @@ In addition, other features are supported such as transparent compression (for w
 <span>  envir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sys.parent.html" class="external-link">parent.frame</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-24">Arguments<a class="anchor" aria-label="anchor" href="#arguments-24"></a></h4>
+<h4 id="arguments-23">Arguments<a class="anchor" aria-label="anchor" href="#arguments-23"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>args</code></dt>
 <dd><p>The indices for each dimension to subset given as a list. This makes this easier to use as a programmatic API. For interactive use we recommend the use of the <code>[</code> operator. If set to <code>NULL</code>, the entire dataset will be read.</p></dd>
 
@@ -967,10 +951,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-set_extent"></a><div class="section">
 <h3 id="h-d-set-extent-"><code>H5D$set_extent()</code><a class="anchor" aria-label="anchor" href="#h-d-set-extent-"></a></h3>
 <p>This function implements the HDF5-API function H5Dset_extent. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_d.html</a> for details.</p><div class="section">
-<h4 id="usage-34">Usage<a class="anchor" aria-label="anchor" href="#usage-34"></a></h4>
+<h4 id="usage-33">Usage<a class="anchor" aria-label="anchor" href="#usage-33"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">set_extent</span><span class="op">(</span><span class="va">dims</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-25">Arguments<a class="anchor" aria-label="anchor" href="#arguments-25"></a></h4>
+<h4 id="arguments-24">Arguments<a class="anchor" aria-label="anchor" href="#arguments-24"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>dims</code></dt>
 <dd><p>The dimensions of the object.</p></dd>
 
@@ -983,7 +967,7 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-get_fill_value"></a><div class="section">
 <h3 id="h-d-get-fill-value-"><code>H5D$get_fill_value()</code><a class="anchor" aria-label="anchor" href="#h-d-get-fill-value-"></a></h3>
 <p>This function implements the HDF5-API function H5Pget_fill_value, automatically supplying the datatype of the dataset for convenience. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_p.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_p.html</a> for details.</p><div class="section">
-<h4 id="usage-35">Usage<a class="anchor" aria-label="anchor" href="#usage-35"></a></h4>
+<h4 id="usage-34">Usage<a class="anchor" aria-label="anchor" href="#usage-34"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">get_fill_value</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -992,10 +976,10 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-create_reference"></a><div class="section">
 <h3 id="h-d-create-reference-"><code>H5D$create_reference()</code><a class="anchor" aria-label="anchor" href="#h-d-create-reference-"></a></h3>
 <p>This function implements the HDF5-API function H5Rcreate. The parameters are interpreted as in '['. The function always create <code>H5R_DATASET_REGION</code> references Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_r.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_r.html</a> for details.</p><div class="section">
-<h4 id="usage-36">Usage<a class="anchor" aria-label="anchor" href="#usage-36"></a></h4>
+<h4 id="usage-35">Usage<a class="anchor" aria-label="anchor" href="#usage-35"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">create_reference</span><span class="op">(</span><span class="va">...</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-26">Arguments<a class="anchor" aria-label="anchor" href="#arguments-26"></a></h4>
+<h4 id="arguments-25">Arguments<a class="anchor" aria-label="anchor" href="#arguments-25"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>...</code></dt>
 <dd><p>Further arguments; currently ignored.</p></dd>
 
@@ -1008,15 +992,31 @@ In addition, other features are supported such as transparent compression (for w
 <p></p><hr><a id="method-H5D-print"></a><div class="section">
 <h3 id="h-d-print-"><code>H5D$print()</code><a class="anchor" aria-label="anchor" href="#h-d-print-"></a></h3>
 <p>Prints information for the dataset</p><div class="section">
-<h4 id="usage-37">Usage<a class="anchor" aria-label="anchor" href="#usage-37"></a></h4>
+<h4 id="usage-36">Usage<a class="anchor" aria-label="anchor" href="#usage-36"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">print</span><span class="op">(</span><span class="va">...</span>, max.attributes <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-27">Arguments<a class="anchor" aria-label="anchor" href="#arguments-27"></a></h4>
+<h4 id="arguments-26">Arguments<a class="anchor" aria-label="anchor" href="#arguments-26"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>...</code></dt>
 <dd><p>ignored</p></dd>
 
       <dt><code>max.attributes</code></dt>
 <dd><p>Maximum number of attribute names to print</p></dd>
+
+
+</dl><p></p></div>
+</div>
+
+</div>
+
+<p></p><hr><a id="method-H5D-obj_info"></a><div class="section">
+<h3 id="h-d-obj-info-"><code>H5D$obj_info()</code><a class="anchor" aria-label="anchor" href="#h-d-obj-info-"></a></h3>
+<p>This function implements the HDF5-API function H5Oget_info. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html</a> for details.</p><div class="section">
+<h4 id="usage-37">Usage<a class="anchor" aria-label="anchor" href="#usage-37"></a></h4>
+<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5D</span><span class="op">$</span><span class="fu">obj_info</span><span class="op">(</span>remove_internal_use_only <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><p></p></div>
+</div><p></p><div class="section">
+<h4 id="arguments-27">Arguments<a class="anchor" aria-label="anchor" href="#arguments-27"></a></h4>
+<p></p><div class="arguments"><dl><dt><code>remove_internal_use_only</code></dt>
+<dd><p>Logical; should fields that are only of internal use be dropped from the result.</p></dd>
 
 
 </dl><p></p></div>
@@ -1120,7 +1120,7 @@ In addition, other features are supported such as transparent compression (for w
 <span class="r-in"><span><span class="va">dset</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Class: H5D</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dataset: /basic</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Filename: /tmp/Rtmp1e9H8s/file1ffa3ec98402.h5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Filename: /tmp/Rtmp08bhGV/file1f387f1c8903.h5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Access type: H5F_ACC_RDWR</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Datatype: H5T_STD_I32LE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Space: Type=Simple     Dims=5 x 2     Maxdims=10 x 2</span>

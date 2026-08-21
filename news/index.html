@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hdf5r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.13</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.14</span>
       </span>
     </div>
 
@@ -51,12 +51,16 @@
     </div>
 
     <div class="section level2">
-<h2 class="page-header" data-toc-text="1.3.13" id="hdf5r-1313">hdf5r 1.3.13<a class="anchor" aria-label="anchor" href="#hdf5r-1313"></a></h2>
+<h2 class="page-header" data-toc-text="1.3.14" id="hdf5r-1314">hdf5r 1.3.14<a class="anchor" aria-label="anchor" href="#hdf5r-1314"></a></h2>
 <ul><li>Fixed installation against ‘HDF5’ 2.x. The private driver-init symbols <code>H5FD_family_init()</code>, <code>H5FD_log_init()</code>, <code>H5FD_sec2_init()</code> and <code>H5FD_stdio_init()</code> were removed from the public ‘HDF5’ headers, which broke compilation on every platform building against ‘HDF5’ 2.x. The <code>R</code> wrappers around them were never reachable from <code>R</code> and have been removed.</li>
 <li>Fixed <code>H5T_ENUM</code> for enumerations containing negative values on platforms where plain <code>char</code> is unsigned, such as <code>AArch64</code> <code>Linux</code>. Such enumerations previously failed with a <code>value redefinition</code> error from ‘HDF5’.</li>
 <li>
 <code><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls()</a></code>, and therefore <code><a href="../reference/list-groups-datasets.html">list.datasets()</a></code>, <code><a href="../reference/list-groups-datasets.html">list.groups()</a></code> and <code><a href="../reference/list-groups-datasets.html">list.objects()</a></code>, now default to <code>order = h5const$H5_ITER_INC</code> instead of <code>h5const$H5_ITER_NATIVE</code>. <code>H5_ITER_NATIVE</code> leaves the order unspecified; it came out in name order up to ‘HDF5’ 1.x but is creation order in ‘HDF5’ 2.x. The new default keeps the listing in name order on every ‘HDF5’ version and makes it agree with <code><a href="https://rdrr.io/r/base/names.html" class="external-link">names()</a></code>. Pass <code>order = h5const$H5_ITER_NATIVE</code> explicitly to get the previous behaviour.</li>
-<li>Fixed an unprotected variable in <code>H5ToR_Post_RComplex()</code> reported by <code>rchk</code>.</li>
+<li>Fixed the final link step on platforms whose ‘HDF5’ serial build is named <code>libhdf5_serial</code> (such as <code>Debian</code> and <code>Ubuntu</code> building against ‘HDF5’ 2.x). <code>configure</code> now keeps the <code>-lhdf5*</code> libraries reported by <code>h5cc -show</code> and only falls back to the generic <code>-lhdf5_hl -lhdf5</code>, which do not exist there, when <code>h5cc</code> reports no ‘HDF5’ library itself.</li>
+<li>Fixed unprotected variables in <code>H5ToR_Post_RComplex()</code> and <code><a href="../reference/guess_dtype.html">guess_nelem()</a></code> reported by <code>rchk</code>.</li>
+<li>The <code>R6</code> class methods are now documented with ordinary <code>roxygen2</code> comments instead of the experimental in-body string literals that <code>roxygen2</code> 8 no longer supports, so the manual pages can be regenerated again.</li>
+<li>Removed <code>formatR</code> from <code>Suggests</code>; it is no longer used.</li>
+<li>The package is now checked and its website built by <code>GitHub Actions</code>, including jobs for <code>AArch64</code> <code>Linux</code> and for ‘HDF5’ 2.x, the two platforms behind the failures fixed in this release.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="1.3.12" id="hdf5r-1312">hdf5r 1.3.12<small>2025-01-20</small><a class="anchor" aria-label="anchor" href="#hdf5r-1312"></a></h2>

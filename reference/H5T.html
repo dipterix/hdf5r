@@ -49,7 +49,7 @@ H5T_VLEN
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hdf5r</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.13</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3.14</span>
       </span>
     </div>
 
@@ -134,8 +134,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-<p></p><ul><li><p><a href="#method-H5T-obj_info"><code>H5T$obj_info()</code></a></p></li>
-<li><p><a href="#method-H5T-get_obj_name"><code>H5T$get_obj_name()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-H5T-get_obj_name"><code>H5T$get_obj_name()</code></a></p></li>
 <li><p><a href="#method-H5T-create_attr"><code>H5T$create_attr()</code></a></p></li>
 <li><p><a href="#method-H5T-attr_open"><code>H5T$attr_open()</code></a></p></li>
 <li><p><a href="#method-H5T-create_attr_by_name"><code>H5T$create_attr_by_name()</code></a></p></li>
@@ -174,6 +173,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <li><p><a href="#method-H5T-get_create_plist"><code>H5T$get_create_plist()</code></a></p></li>
 <li><p><a href="#method-H5T-to_text"><code>H5T$to_text()</code></a></p></li>
 <li><p><a href="#method-H5T-print"><code>H5T$print()</code></a></p></li>
+<li><p><a href="#method-H5T-obj_info"><code>H5T$obj_info()</code></a></p></li>
 </ul></div><p><details><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="close"><a href="H5RefClass.html#method-close"><code>H5RefClass$close()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="dec_ref"><a href="H5RefClass.html#method-dec_ref"><code>H5RefClass$dec_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="get_file_id"><a href="H5RefClass.html#method-get_file_id"><code>H5RefClass$get_file_id()</code></a></span></li>
@@ -181,26 +181,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="get_ref"><a href="H5RefClass.html#method-get_ref"><code>H5RefClass$get_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="inc_ref"><a href="H5RefClass.html#method-inc_ref"><code>H5RefClass$inc_ref()</code></a></span></li>
   <li><span class="pkg-link" data-pkg="hdf5r" data-topic="H5RefClass" data-id="methods"><a href="H5RefClass.html#method-methods"><code>H5RefClass$methods()</code></a></span></li>
-</ul></details></p><hr><a id="method-H5T-obj_info"></a><div class="section">
-<h3 id="h-t-obj-info-"><code>H5T$obj_info()</code><a class="anchor" aria-label="anchor" href="#h-t-obj-info-"></a></h3>
-<p>This function implements the HDF5-API function H5Oget_info. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html</a> for details.</p><div class="section">
-<h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
-<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">obj_info</span><span class="op">(</span>remove_internal_use_only <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div><p></p><div class="section">
-<h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
-<p></p><div class="arguments"><dl><dt><code>remove_internal_use_only</code></dt>
-<dd><p>Logical; should fields that are only of internal use be dropped from the result.</p></dd>
-
-
-</dl><p></p></div>
-</div>
-
-</div>
-
-<p></p><hr><a id="method-H5T-get_obj_name"></a><div class="section">
+</ul></details></p><hr><a id="method-H5T-get_obj_name"></a><div class="section">
 <h3 id="h-t-get-obj-name-"><code>H5T$get_obj_name()</code><a class="anchor" aria-label="anchor" href="#h-t-get-obj-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Iget_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_i.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_i.html</a> for details.</p><div class="section">
-<h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
+<h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_obj_name</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -209,10 +193,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-create_attr"></a><div class="section">
 <h3 id="h-t-create-attr-"><code>H5T$create_attr()</code><a class="anchor" aria-label="anchor" href="#h-t-create-attr-"></a></h3>
 <p>This function implements the HDF5-API function H5Acreate2. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
+<h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">create_attr</span><span class="op">(</span><span class="va">attr_name</span>, robj <span class="op">=</span> <span class="cn">NULL</span>, dtype <span class="op">=</span> <span class="cn">NULL</span>, space <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
+<h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -234,10 +218,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_open"></a><div class="section">
 <h3 id="h-t-attr-open-"><code>H5T$attr_open()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-open-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
+<h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_open</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-2">Arguments<a class="anchor" aria-label="anchor" href="#arguments-2"></a></h4>
+<h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -250,7 +234,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-create_attr_by_name"></a><div class="section">
 <h3 id="h-t-create-attr-by-name-"><code>H5T$create_attr_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-create-attr-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Acreate_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-4">Usage<a class="anchor" aria-label="anchor" href="#usage-4"></a></h4>
+<h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">create_attr_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -260,7 +244,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-3">Arguments<a class="anchor" aria-label="anchor" href="#arguments-3"></a></h4>
+<h4 id="arguments-2">Arguments<a class="anchor" aria-label="anchor" href="#arguments-2"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -288,14 +272,14 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_open_by_name"></a><div class="section">
 <h3 id="h-t-attr-open-by-name-"><code>H5T$attr_open_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-open-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-5">Usage<a class="anchor" aria-label="anchor" href="#usage-5"></a></h4>
+<h4 id="usage-4">Usage<a class="anchor" aria-label="anchor" href="#usage-4"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_open_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-4">Arguments<a class="anchor" aria-label="anchor" href="#arguments-4"></a></h4>
+<h4 id="arguments-3">Arguments<a class="anchor" aria-label="anchor" href="#arguments-3"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -314,7 +298,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_open_by_idx"></a><div class="section">
 <h3 id="h-t-attr-open-by-idx-"><code>H5T$attr_open_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-open-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Aopen_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-6">Usage<a class="anchor" aria-label="anchor" href="#usage-6"></a></h4>
+<h4 id="usage-5">Usage<a class="anchor" aria-label="anchor" href="#usage-5"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_open_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -323,7 +307,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-5">Arguments<a class="anchor" aria-label="anchor" href="#arguments-5"></a></h4>
+<h4 id="arguments-4">Arguments<a class="anchor" aria-label="anchor" href="#arguments-4"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>n</code></dt>
 <dd><p>The index of the item to access; zero-based.</p></dd>
 
@@ -348,14 +332,14 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_exists_by_name"></a><div class="section">
 <h3 id="h-t-attr-exists-by-name-"><code>H5T$attr_exists_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-exists-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aexists_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-7">Usage<a class="anchor" aria-label="anchor" href="#usage-7"></a></h4>
+<h4 id="usage-6">Usage<a class="anchor" aria-label="anchor" href="#usage-6"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_exists_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-6">Arguments<a class="anchor" aria-label="anchor" href="#arguments-6"></a></h4>
+<h4 id="arguments-5">Arguments<a class="anchor" aria-label="anchor" href="#arguments-5"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -374,10 +358,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_exists"></a><div class="section">
 <h3 id="h-t-attr-exists-"><code>H5T$attr_exists()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-exists-"></a></h3>
 <p>This function implements the HDF5-API function H5Aexists. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-8">Usage<a class="anchor" aria-label="anchor" href="#usage-8"></a></h4>
+<h4 id="usage-7">Usage<a class="anchor" aria-label="anchor" href="#usage-7"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_exists</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-7">Arguments<a class="anchor" aria-label="anchor" href="#arguments-7"></a></h4>
+<h4 id="arguments-6">Arguments<a class="anchor" aria-label="anchor" href="#arguments-6"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -390,7 +374,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_rename_by_name"></a><div class="section">
 <h3 id="h-t-attr-rename-by-name-"><code>H5T$attr_rename_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-rename-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Arename_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-9">Usage<a class="anchor" aria-label="anchor" href="#usage-9"></a></h4>
+<h4 id="usage-8">Usage<a class="anchor" aria-label="anchor" href="#usage-8"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_rename_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">old_attr_name</span>,</span>
 <span>  <span class="va">new_attr_name</span>,</span>
@@ -398,7 +382,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-8">Arguments<a class="anchor" aria-label="anchor" href="#arguments-8"></a></h4>
+<h4 id="arguments-7">Arguments<a class="anchor" aria-label="anchor" href="#arguments-7"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>old_attr_name</code></dt>
 <dd><p>The current name of the attribute.</p></dd>
 
@@ -420,10 +404,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_rename"></a><div class="section">
 <h3 id="h-t-attr-rename-"><code>H5T$attr_rename()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-rename-"></a></h3>
 <p>This function implements the HDF5-API function H5Arename. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-10">Usage<a class="anchor" aria-label="anchor" href="#usage-10"></a></h4>
+<h4 id="usage-9">Usage<a class="anchor" aria-label="anchor" href="#usage-9"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_rename</span><span class="op">(</span><span class="va">old_attr_name</span>, <span class="va">new_attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-9">Arguments<a class="anchor" aria-label="anchor" href="#arguments-9"></a></h4>
+<h4 id="arguments-8">Arguments<a class="anchor" aria-label="anchor" href="#arguments-8"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>old_attr_name</code></dt>
 <dd><p>The current name of the attribute.</p></dd>
 
@@ -439,10 +423,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_delete"></a><div class="section">
 <h3 id="h-t-attr-delete-"><code>H5T$attr_delete()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-delete-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-11">Usage<a class="anchor" aria-label="anchor" href="#usage-11"></a></h4>
+<h4 id="usage-10">Usage<a class="anchor" aria-label="anchor" href="#usage-10"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_delete</span><span class="op">(</span><span class="va">attr_name</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-10">Arguments<a class="anchor" aria-label="anchor" href="#arguments-10"></a></h4>
+<h4 id="arguments-9">Arguments<a class="anchor" aria-label="anchor" href="#arguments-9"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -455,14 +439,14 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_delete_by_name"></a><div class="section">
 <h3 id="h-t-attr-delete-by-name-"><code>H5T$attr_delete_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-delete-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-12">Usage<a class="anchor" aria-label="anchor" href="#usage-12"></a></h4>
+<h4 id="usage-11">Usage<a class="anchor" aria-label="anchor" href="#usage-11"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_delete_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-11">Arguments<a class="anchor" aria-label="anchor" href="#arguments-11"></a></h4>
+<h4 id="arguments-10">Arguments<a class="anchor" aria-label="anchor" href="#arguments-10"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -481,7 +465,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_delete_by_idx"></a><div class="section">
 <h3 id="h-t-attr-delete-by-idx-"><code>H5T$attr_delete_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-delete-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Adelete_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-13">Usage<a class="anchor" aria-label="anchor" href="#usage-13"></a></h4>
+<h4 id="usage-12">Usage<a class="anchor" aria-label="anchor" href="#usage-12"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_delete_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
@@ -490,7 +474,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-12">Arguments<a class="anchor" aria-label="anchor" href="#arguments-12"></a></h4>
+<h4 id="arguments-11">Arguments<a class="anchor" aria-label="anchor" href="#arguments-11"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>n</code></dt>
 <dd><p>The index of the item to access; zero-based.</p></dd>
 
@@ -515,14 +499,14 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_info_by_name"></a><div class="section">
 <h3 id="h-t-attr-info-by-name-"><code>H5T$attr_info_by_name()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-info-by-name-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_info_by_name. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-14">Usage<a class="anchor" aria-label="anchor" href="#usage-14"></a></h4>
+<h4 id="usage-13">Usage<a class="anchor" aria-label="anchor" href="#usage-13"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_info_by_name</span><span class="op">(</span></span>
 <span>  <span class="va">attr_name</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-13">Arguments<a class="anchor" aria-label="anchor" href="#arguments-13"></a></h4>
+<h4 id="arguments-12">Arguments<a class="anchor" aria-label="anchor" href="#arguments-12"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>attr_name</code></dt>
 <dd><p>The name of the attribute.</p></dd>
 
@@ -541,8 +525,42 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-attr_info_by_idx"></a><div class="section">
 <h3 id="h-t-attr-info-by-idx-"><code>H5T$attr_info_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-info-by-idx-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_info_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-15">Usage<a class="anchor" aria-label="anchor" href="#usage-15"></a></h4>
+<h4 id="usage-14">Usage<a class="anchor" aria-label="anchor" href="#usage-14"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_info_by_idx</span><span class="op">(</span></span>
+<span>  <span class="va">n</span>,</span>
+<span>  <span class="va">obj_name</span>,</span>
+<span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
+<span>  order <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_ITER_NATIVE</span>,</span>
+<span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
+<span><span class="op">)</span></span></code></pre></div><p></p></div>
+</div><p></p><div class="section">
+<h4 id="arguments-13">Arguments<a class="anchor" aria-label="anchor" href="#arguments-13"></a></h4>
+<p></p><div class="arguments"><dl><dt><code>n</code></dt>
+<dd><p>The index of the item to access; zero-based.</p></dd>
+
+      <dt><code>obj_name</code></dt>
+<dd><p>The name of the object, relative to the object the method is called on.</p></dd>
+
+      <dt><code>idx_type</code></dt>
+<dd><p>The index to iterate over; one of the <code>H5_INDEX_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
+
+      <dt><code>order</code></dt>
+<dd><p>The order in which to iterate; one of the <code>H5_ITER_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
+
+      <dt><code>link_access_pl</code></dt>
+<dd><p>The link access property list. See <code><a href="H5P_LINK_ACCESS.html">H5P_LINK_ACCESS</a></code>.</p></dd>
+
+
+</dl><p></p></div>
+</div>
+
+</div>
+
+<p></p><hr><a id="method-H5T-attr_name_by_idx"></a><div class="section">
+<h3 id="h-t-attr-name-by-idx-"><code>H5T$attr_name_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-name-by-idx-"></a></h3>
+<p>This function implements the HDF5-API function H5Aget_name_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
+<h4 id="usage-15">Usage<a class="anchor" aria-label="anchor" href="#usage-15"></a></h4>
+<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_name_by_idx</span><span class="op">(</span></span>
 <span>  <span class="va">n</span>,</span>
 <span>  <span class="va">obj_name</span>,</span>
 <span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
@@ -572,44 +590,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 
 </div>
 
-<p></p><hr><a id="method-H5T-attr_name_by_idx"></a><div class="section">
-<h3 id="h-t-attr-name-by-idx-"><code>H5T$attr_name_by_idx()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-name-by-idx-"></a></h3>
-<p>This function implements the HDF5-API function H5Aget_name_by_idx. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-16">Usage<a class="anchor" aria-label="anchor" href="#usage-16"></a></h4>
-<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_name_by_idx</span><span class="op">(</span></span>
-<span>  <span class="va">n</span>,</span>
-<span>  <span class="va">obj_name</span>,</span>
-<span>  idx_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_INDEX_NAME</span>,</span>
-<span>  order <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5_ITER_NATIVE</span>,</span>
-<span>  link_access_pl <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5P_DEFAULT</span></span>
-<span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div><p></p><div class="section">
-<h4 id="arguments-15">Arguments<a class="anchor" aria-label="anchor" href="#arguments-15"></a></h4>
-<p></p><div class="arguments"><dl><dt><code>n</code></dt>
-<dd><p>The index of the item to access; zero-based.</p></dd>
-
-      <dt><code>obj_name</code></dt>
-<dd><p>The name of the object, relative to the object the method is called on.</p></dd>
-
-      <dt><code>idx_type</code></dt>
-<dd><p>The index to iterate over; one of the <code>H5_INDEX_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
-
-      <dt><code>order</code></dt>
-<dd><p>The order in which to iterate; one of the <code>H5_ITER_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
-
-      <dt><code>link_access_pl</code></dt>
-<dd><p>The link access property list. See <code><a href="H5P_LINK_ACCESS.html">H5P_LINK_ACCESS</a></code>.</p></dd>
-
-
-</dl><p></p></div>
-</div>
-
-</div>
-
 <p></p><hr><a id="method-H5T-attr_get_number"></a><div class="section">
 <h3 id="h-t-attr-get-number-"><code>H5T$attr_get_number()</code><a class="anchor" aria-label="anchor" href="#h-t-attr-get-number-"></a></h3>
 <p>This function implements the HDF5-API function H5Aget_num_attrs. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_a.html</a> for details.</p><div class="section">
-<h4 id="usage-17">Usage<a class="anchor" aria-label="anchor" href="#usage-17"></a></h4>
+<h4 id="usage-16">Usage<a class="anchor" aria-label="anchor" href="#usage-16"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">attr_get_number</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -618,10 +602,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-create_reference"></a><div class="section">
 <h3 id="h-t-create-reference-"><code>H5T$create_reference()</code><a class="anchor" aria-label="anchor" href="#h-t-create-reference-"></a></h3>
 <p>This function implements the HDF5-API function H5Rcreate. If <code>space=NULL</code> then a <code>H5R_OBJECT</code> reference is created, otherwise a <code>H5R_DATASET_REGION</code> reference Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_r.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_r.html</a> for details.</p><div class="section">
-<h4 id="usage-18">Usage<a class="anchor" aria-label="anchor" href="#usage-18"></a></h4>
+<h4 id="usage-17">Usage<a class="anchor" aria-label="anchor" href="#usage-17"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">create_reference</span><span class="op">(</span>name <span class="op">=</span> <span class="st">"."</span>, space <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-16">Arguments<a class="anchor" aria-label="anchor" href="#arguments-16"></a></h4>
+<h4 id="arguments-15">Arguments<a class="anchor" aria-label="anchor" href="#arguments-15"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>name</code></dt>
 <dd><p>The name of the object, relative to the object the method is called on.</p></dd>
 
@@ -637,10 +621,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-initialize"></a><div class="section">
 <h3 id="h-t-new-"><code>H5T$new()</code><a class="anchor" aria-label="anchor" href="#h-t-new-"></a></h3>
 <p>Internal use only</p><div class="section">
-<h4 id="usage-19">Usage<a class="anchor" aria-label="anchor" href="#usage-19"></a></h4>
+<h4 id="usage-18">Usage<a class="anchor" aria-label="anchor" href="#usage-18"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/H5T.html">H5T</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="va">id</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-17">Arguments<a class="anchor" aria-label="anchor" href="#arguments-17"></a></h4>
+<h4 id="arguments-16">Arguments<a class="anchor" aria-label="anchor" href="#arguments-16"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>id</code></dt>
 <dd><p>An HDF5 id; for internal use only.</p></dd>
 
@@ -653,7 +637,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_class"></a><div class="section">
 <h3 id="h-t-get-class-"><code>H5T$get_class()</code><a class="anchor" aria-label="anchor" href="#h-t-get-class-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_class. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-20">Usage<a class="anchor" aria-label="anchor" href="#usage-20"></a></h4>
+<h4 id="usage-19">Usage<a class="anchor" aria-label="anchor" href="#usage-19"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_class</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -662,10 +646,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_size"></a><div class="section">
 <h3 id="h-t-get-size-"><code>H5T$get_size()</code><a class="anchor" aria-label="anchor" href="#h-t-get-size-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_size. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-21">Usage<a class="anchor" aria-label="anchor" href="#usage-21"></a></h4>
+<h4 id="usage-20">Usage<a class="anchor" aria-label="anchor" href="#usage-20"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_size</span><span class="op">(</span><span class="va">...</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-18">Arguments<a class="anchor" aria-label="anchor" href="#arguments-18"></a></h4>
+<h4 id="arguments-17">Arguments<a class="anchor" aria-label="anchor" href="#arguments-17"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>...</code></dt>
 <dd><p>ignored</p></dd>
 
@@ -678,10 +662,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-set_size"></a><div class="section">
 <h3 id="h-t-set-size-"><code>H5T$set_size()</code><a class="anchor" aria-label="anchor" href="#h-t-set-size-"></a></h3>
 <p>This function implements the HDF5-API function H5Tset_size. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-22">Usage<a class="anchor" aria-label="anchor" href="#usage-22"></a></h4>
+<h4 id="usage-21">Usage<a class="anchor" aria-label="anchor" href="#usage-21"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">set_size</span><span class="op">(</span><span class="va">size</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-19">Arguments<a class="anchor" aria-label="anchor" href="#arguments-19"></a></h4>
+<h4 id="arguments-18">Arguments<a class="anchor" aria-label="anchor" href="#arguments-18"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>size</code></dt>
 <dd><p>The size of the object in bytes; use <code>Inf</code> for variable-length strings.</p></dd>
 
@@ -694,10 +678,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-set_precision"></a><div class="section">
 <h3 id="h-t-set-precision-"><code>H5T$set_precision()</code><a class="anchor" aria-label="anchor" href="#h-t-set-precision-"></a></h3>
 <p>This function implements the HDF5-API function H5Tset_precision. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-23">Usage<a class="anchor" aria-label="anchor" href="#usage-23"></a></h4>
+<h4 id="usage-22">Usage<a class="anchor" aria-label="anchor" href="#usage-22"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">set_precision</span><span class="op">(</span><span class="va">precision</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-20">Arguments<a class="anchor" aria-label="anchor" href="#arguments-20"></a></h4>
+<h4 id="arguments-19">Arguments<a class="anchor" aria-label="anchor" href="#arguments-19"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>precision</code></dt>
 <dd><p>The precision of the datatype, in bits.</p></dd>
 
@@ -710,7 +694,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_precision"></a><div class="section">
 <h3 id="h-t-get-precision-"><code>H5T$get_precision()</code><a class="anchor" aria-label="anchor" href="#h-t-get-precision-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_precision. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-24">Usage<a class="anchor" aria-label="anchor" href="#usage-24"></a></h4>
+<h4 id="usage-23">Usage<a class="anchor" aria-label="anchor" href="#usage-23"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_precision</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -719,10 +703,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-set_order"></a><div class="section">
 <h3 id="h-t-set-order-"><code>H5T$set_order()</code><a class="anchor" aria-label="anchor" href="#h-t-set-order-"></a></h3>
 <p>This function implements the HDF5-API function H5Tset_order. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-25">Usage<a class="anchor" aria-label="anchor" href="#usage-25"></a></h4>
+<h4 id="usage-24">Usage<a class="anchor" aria-label="anchor" href="#usage-24"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">set_order</span><span class="op">(</span><span class="va">order</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-21">Arguments<a class="anchor" aria-label="anchor" href="#arguments-21"></a></h4>
+<h4 id="arguments-20">Arguments<a class="anchor" aria-label="anchor" href="#arguments-20"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>order</code></dt>
 <dd><p>The order in which to iterate; one of the <code>H5_ITER_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -735,7 +719,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_order"></a><div class="section">
 <h3 id="h-t-get-order-"><code>H5T$get_order()</code><a class="anchor" aria-label="anchor" href="#h-t-get-order-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_order. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-26">Usage<a class="anchor" aria-label="anchor" href="#usage-26"></a></h4>
+<h4 id="usage-25">Usage<a class="anchor" aria-label="anchor" href="#usage-25"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_order</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -744,10 +728,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-set_offset"></a><div class="section">
 <h3 id="h-t-set-offset-"><code>H5T$set_offset()</code><a class="anchor" aria-label="anchor" href="#h-t-set-offset-"></a></h3>
 <p>This function implements the HDF5-API function H5Tset_offset. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-27">Usage<a class="anchor" aria-label="anchor" href="#usage-27"></a></h4>
+<h4 id="usage-26">Usage<a class="anchor" aria-label="anchor" href="#usage-26"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">set_offset</span><span class="op">(</span><span class="va">offset</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-22">Arguments<a class="anchor" aria-label="anchor" href="#arguments-22"></a></h4>
+<h4 id="arguments-21">Arguments<a class="anchor" aria-label="anchor" href="#arguments-21"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>offset</code></dt>
 <dd><p>The offset to apply; see the corresponding HDF5 function for how it is interpreted.</p></dd>
 
@@ -760,7 +744,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_offset"></a><div class="section">
 <h3 id="h-t-get-offset-"><code>H5T$get_offset()</code><a class="anchor" aria-label="anchor" href="#h-t-get-offset-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_offset. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-28">Usage<a class="anchor" aria-label="anchor" href="#usage-28"></a></h4>
+<h4 id="usage-27">Usage<a class="anchor" aria-label="anchor" href="#usage-27"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_offset</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -769,10 +753,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-set_pad"></a><div class="section">
 <h3 id="h-t-set-pad-"><code>H5T$set_pad()</code><a class="anchor" aria-label="anchor" href="#h-t-set-pad-"></a></h3>
 <p>This function implements the HDF5-API function H5Tset_pad. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-29">Usage<a class="anchor" aria-label="anchor" href="#usage-29"></a></h4>
+<h4 id="usage-28">Usage<a class="anchor" aria-label="anchor" href="#usage-28"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">set_pad</span><span class="op">(</span><span class="va">pad</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-23">Arguments<a class="anchor" aria-label="anchor" href="#arguments-23"></a></h4>
+<h4 id="arguments-22">Arguments<a class="anchor" aria-label="anchor" href="#arguments-22"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>pad</code></dt>
 <dd><p>The padding to use for unused bits; one of the <code>H5T_PAD_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -785,7 +769,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_pad"></a><div class="section">
 <h3 id="h-t-get-pad-"><code>H5T$get_pad()</code><a class="anchor" aria-label="anchor" href="#h-t-get-pad-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_pad. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-30">Usage<a class="anchor" aria-label="anchor" href="#usage-30"></a></h4>
+<h4 id="usage-29">Usage<a class="anchor" aria-label="anchor" href="#usage-29"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_pad</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -794,7 +778,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-copy"></a><div class="section">
 <h3 id="h-t-copy-"><code>H5T$copy()</code><a class="anchor" aria-label="anchor" href="#h-t-copy-"></a></h3>
 <p>This function implements the HDF5-API function H5Tcopy. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-31">Usage<a class="anchor" aria-label="anchor" href="#usage-31"></a></h4>
+<h4 id="usage-30">Usage<a class="anchor" aria-label="anchor" href="#usage-30"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">copy</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -803,7 +787,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-is_committed"></a><div class="section">
 <h3 id="h-t-is-committed-"><code>H5T$is_committed()</code><a class="anchor" aria-label="anchor" href="#h-t-is-committed-"></a></h3>
 <p>This function implements the HDF5-API function H5Tcommitted. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-32">Usage<a class="anchor" aria-label="anchor" href="#usage-32"></a></h4>
+<h4 id="usage-31">Usage<a class="anchor" aria-label="anchor" href="#usage-31"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">is_committed</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -812,10 +796,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-equal"></a><div class="section">
 <h3 id="h-t-equal-"><code>H5T$equal()</code><a class="anchor" aria-label="anchor" href="#h-t-equal-"></a></h3>
 <p>This function implements the HDF5-API function H5Tequal. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-33">Usage<a class="anchor" aria-label="anchor" href="#usage-33"></a></h4>
+<h4 id="usage-32">Usage<a class="anchor" aria-label="anchor" href="#usage-32"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">equal</span><span class="op">(</span><span class="va">dtype</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-24">Arguments<a class="anchor" aria-label="anchor" href="#arguments-24"></a></h4>
+<h4 id="arguments-23">Arguments<a class="anchor" aria-label="anchor" href="#arguments-23"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>dtype</code></dt>
 <dd><p>The datatype to use; an object of class <code>H5T</code>.</p></dd>
 
@@ -828,7 +812,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-is_vlen"></a><div class="section">
 <h3 id="h-t-is-vlen-"><code>H5T$is_vlen()</code><a class="anchor" aria-label="anchor" href="#h-t-is-vlen-"></a></h3>
 <p>This function detects if the underlying type is H5T_VLEN or a variable length string. This is used to know if after reading a dataset, memory has to be freed</p><div class="section">
-<h4 id="usage-34">Usage<a class="anchor" aria-label="anchor" href="#usage-34"></a></h4>
+<h4 id="usage-33">Usage<a class="anchor" aria-label="anchor" href="#usage-33"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">is_vlen</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -837,10 +821,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-detect_class"></a><div class="section">
 <h3 id="h-t-detect-class-"><code>H5T$detect_class()</code><a class="anchor" aria-label="anchor" href="#h-t-detect-class-"></a></h3>
 <p>This function implements the HDF5-API function H5Tdetect_class. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-35">Usage<a class="anchor" aria-label="anchor" href="#usage-35"></a></h4>
+<h4 id="usage-34">Usage<a class="anchor" aria-label="anchor" href="#usage-34"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">detect_class</span><span class="op">(</span><span class="va">dtype_class</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-25">Arguments<a class="anchor" aria-label="anchor" href="#arguments-25"></a></h4>
+<h4 id="arguments-24">Arguments<a class="anchor" aria-label="anchor" href="#arguments-24"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>dtype_class</code></dt>
 <dd><p>The datatype class to look for; one of the <code>H5T_*</code> class values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -853,10 +837,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_native_type"></a><div class="section">
 <h3 id="h-t-get-native-type-"><code>H5T$get_native_type()</code><a class="anchor" aria-label="anchor" href="#h-t-get-native-type-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_native_type. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-36">Usage<a class="anchor" aria-label="anchor" href="#usage-36"></a></h4>
+<h4 id="usage-35">Usage<a class="anchor" aria-label="anchor" href="#usage-35"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_native_type</span><span class="op">(</span>direction <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5T_DIR_ASCEND</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-26">Arguments<a class="anchor" aria-label="anchor" href="#arguments-26"></a></h4>
+<h4 id="arguments-25">Arguments<a class="anchor" aria-label="anchor" href="#arguments-25"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>direction</code></dt>
 <dd><p>The direction in which to search for a native type; one of the <code>H5T_DIR_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -869,7 +853,7 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-get_create_plist"></a><div class="section">
 <h3 id="h-t-get-create-plist-"><code>H5T$get_create_plist()</code><a class="anchor" aria-label="anchor" href="#h-t-get-create-plist-"></a></h3>
 <p>This function implements the HDF5-API function H5Tget_create_plist. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_t.html</a> for details.</p><div class="section">
-<h4 id="usage-37">Usage<a class="anchor" aria-label="anchor" href="#usage-37"></a></h4>
+<h4 id="usage-36">Usage<a class="anchor" aria-label="anchor" href="#usage-36"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">get_create_plist</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
@@ -878,10 +862,10 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-to_text"></a><div class="section">
 <h3 id="h-t-to-text-"><code>H5T$to_text()</code><a class="anchor" aria-label="anchor" href="#h-t-to-text-"></a></h3>
 <p>This function implements the HDF5-API function H5LTdtype_to_text.</p><div class="section">
-<h4 id="usage-38">Usage<a class="anchor" aria-label="anchor" href="#usage-38"></a></h4>
+<h4 id="usage-37">Usage<a class="anchor" aria-label="anchor" href="#usage-37"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">to_text</span><span class="op">(</span>lang_type <span class="op">=</span> <span class="va">h5const</span><span class="op">$</span><span class="va">H5LT_DDL</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-27">Arguments<a class="anchor" aria-label="anchor" href="#arguments-27"></a></h4>
+<h4 id="arguments-26">Arguments<a class="anchor" aria-label="anchor" href="#arguments-26"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>lang_type</code></dt>
 <dd><p>The language to produce the text representation in; one of the <code>H5LT_LANG_*</code> values in <code><a href="h5const.html">h5const</a></code>.</p></dd>
 
@@ -894,12 +878,28 @@ This class represents an HDF5 datatype. It inherits all functions of the
 <p></p><hr><a id="method-H5T-print"></a><div class="section">
 <h3 id="h-t-print-"><code>H5T$print()</code><a class="anchor" aria-label="anchor" href="#h-t-print-"></a></h3>
 <p>Prints information for the group</p><div class="section">
-<h4 id="usage-39">Usage<a class="anchor" aria-label="anchor" href="#usage-39"></a></h4>
+<h4 id="usage-38">Usage<a class="anchor" aria-label="anchor" href="#usage-38"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">print</span><span class="op">(</span><span class="va">...</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div><p></p><div class="section">
-<h4 id="arguments-28">Arguments<a class="anchor" aria-label="anchor" href="#arguments-28"></a></h4>
+<h4 id="arguments-27">Arguments<a class="anchor" aria-label="anchor" href="#arguments-27"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>...</code></dt>
 <dd><p>ignored</p></dd>
+
+
+</dl><p></p></div>
+</div>
+
+</div>
+
+<p></p><hr><a id="method-H5T-obj_info"></a><div class="section">
+<h3 id="h-t-obj-info-"><code>H5T$obj_info()</code><a class="anchor" aria-label="anchor" href="#h-t-obj-info-"></a></h3>
+<p>This function implements the HDF5-API function H5Oget_info. Please see the documentation at <a href="https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html" class="external-link">https://support.hdfgroup.org/documentation/hdf5/latest/group___h5_o.html</a> for details.</p><div class="section">
+<h4 id="usage-39">Usage<a class="anchor" aria-label="anchor" href="#usage-39"></a></h4>
+<p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">H5T</span><span class="op">$</span><span class="fu">obj_info</span><span class="op">(</span>remove_internal_use_only <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><p></p></div>
+</div><p></p><div class="section">
+<h4 id="arguments-28">Arguments<a class="anchor" aria-label="anchor" href="#arguments-28"></a></h4>
+<p></p><div class="arguments"><dl><dt><code>remove_internal_use_only</code></dt>
+<dd><p>Logical; should fields that are only of internal use be dropped from the result.</p></dd>
 
 
 </dl><p></p></div>
